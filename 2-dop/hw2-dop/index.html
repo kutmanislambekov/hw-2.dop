@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+        }
+        .square {
+          width: 100px;
+          height: 100px;
+          background: linear-gradient(90deg, rgb(187, 212, 157) 20%, rgb(255, 255, 255) 50%, rgb(144, 212, 153) 100% );
+          margin: 10px;
+         
+        }
+        #container {
+      display: flex;
+      align-items: center; 
+      flex-wrap: wrap;
+    }
+    #numSquares{
+        width: 200px;
+    }
+    .aa{
+        color: wheat;
+    }
+      </style>
+      <label class="aa" for="numSquares">количество квадратов:</label>
+      <input type="number" id="numSquares" min="1" max="100" value="0" placeholder="выберите число от 1 до 100" >
+      <button onclick="funck2()">ok</button>
+      <div id="container"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
